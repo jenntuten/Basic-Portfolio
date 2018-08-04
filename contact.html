@@ -1,57 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <title>Basic-Portfolio: Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
 <body>
-
-    <head>
-        <title>Basic-Portfolio: Contact Page</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-
-    <header>
-        <div class="links">
-                <a href="index.html">About</a> |
-                <a href="portfolio.html">Portfolio</a> |
-                <a href="contact.html">Contact</a></div></div>
-        <div class="name">
-            Jennifer Tuten
-        </div>
-    </header>
-
-    <main>
-        <div class="aboutMe">
-            Contact
-        </div>
-        <div class="bar">
-
-        </div>
-        <div class="formGroup">
-        <form action="contactPage" method="post">
-            <div>
-              <label for="yourName">Name:</label><br>
-              <input type="text" class="yourName" name="user_name">
+    <div class="wrapper">
+        <header>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="index.html">About </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact </a>
+                    </li>
+                </ul>
             </div>
-            <br>
-            <div>
-              <label for="mail">E-mail:</label><br>
-              <input type="email" class="mail" name="user_mail">
+            <div class="name">
+                Jennifer Tuten
             </div>
-            <br>
-            <div>
-              <label for="msg">Message:</label><br>
-              <textarea class="msg" name="user_message"></textarea>
-            </div>  
-          </form>
-          <br>
-          <button class="btn">Submit</button></p>
-        </div>
-    </main>
+        </header>
+        <main>
+            <div class="aboutMe">
+                Contact
+            </div>
+            <div class="bar">
+            </div>
+            <div class="formGroup">
+                <form action="contactPage" method="post">
+                    <div>
+                        <p class="yourName">Name:</p>
+                        <input type="text" class="yourName" name="user_name" value="John Smith">
+                    </div>
+                    <div>
+                        <p class="mail">E-mail:</p>
+                        <input type="text" class="mail" name="user_mail" value="example@gmail.com">
+                    </div>
+                    <div>
+                        <p class="message">Message:</p>
+                        <textarea class="msg" name="user_message"></textarea>
+                    </div>
+                </form>
+                <br>
+                <button class="btn">Submit</button>
+            </div>
+        </main>
+        <div class="push"></div>
+    </div>
     <footer>
+        <div class="topBar"></div>
+        <div class="bottomBar">
+            Copyright © 2018
+        </div>
+    </footer>
 
-            <div class="bottomBorder">
-    
-            </div>
-        </footer>
 </body>
 
 </html>
